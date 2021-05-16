@@ -1,0 +1,1 @@
+ npm i body-parser cors dotenv express-jwt express-validator jsonwebtoken mongoose aws-sdk morgan
