@@ -1,7 +1,6 @@
 import Layout from '../../components/Layout';
-import { isAuth, logout } from '../../helpers/auth';
+import withAdmin from '../withAdmin';
 
-const Admin = () => { return <Layout>hello {isAuth().name}</Layout>}
+const Admin = ({ user }) => <Layout>{JSON.stringify(user)}</Layout>;
 
-export default Admin;
-
+export default withAdmin(Admin);
